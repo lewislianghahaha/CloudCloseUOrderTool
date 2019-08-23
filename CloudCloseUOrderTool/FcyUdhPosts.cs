@@ -11,12 +11,12 @@ namespace CloudCloseUOrderTool
         /// <summary>
         /// 关闭U订货单据明细行
         /// </summary>
-        /// <param name="dh"></param>
-        /// <param name="ddid"></param>
+        /// <param name="dh">单据号</param>
+        /// <param name="ddid">明细行ID</param>
         /// <returns></returns>
         public static string Ddclose(string dh, string ddid)
         {
-            string ret = "";
+            var ret = "";
             Dictionary<string, string> param = new Dictionary<string, string>();
             param.Add("orderno", dh);
             param.Add("orderdetailid", ddid);
